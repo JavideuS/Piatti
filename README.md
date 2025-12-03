@@ -47,6 +47,20 @@ We implemented a custom CNN to contrast with classical methods.
 - **Size:** Lightweight (~1 million parameters, ~16 MB).
 - **Training:** ~2 hours on an 8 GB GPU.
 
+## Usage
+
+We provide a Jupyter Notebook `demo.ipynb` that demonstrates how to download the pre-trained models from Hugging Face and use them for prediction.
+
+### Quick Start
+1. Install dependencies:
+   ```bash
+   pip install torch torchvision scikit-learn opencv-python joblib huggingface_hub matplotlib
+   ```
+2. Open `demo.ipynb` and run the cells to:
+   - Load the **Classic ML Model**.
+   - Load the **CNN Model**.
+   - Predict the class of an input image.
+
 ## Results
 
 ### Quantitative Metrics (SIFT-based BoF)

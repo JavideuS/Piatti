@@ -87,7 +87,7 @@ if __name__ == '__main__':
     model = PiattiCNN(num_classes=len(test_dataset.classes)).to(device)
 
     # Load checkpoint
-    checkpoint = torch.load('PiattiVL-1232kresnet.pth', map_location=device)
+    checkpoint = torch.load('PiattiVL_v0.69.pth', map_location=device)
     model.load_state_dict(checkpoint['model_state_dict'])
 
     # Count parameters

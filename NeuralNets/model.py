@@ -83,7 +83,3 @@ class PiattiCNN(nn.Module):
         x = self.classifier(x)
         return x
 
-# One-liner to instantiate
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = PiattiCNN(num_classes=10).to(device)
-print(model)
